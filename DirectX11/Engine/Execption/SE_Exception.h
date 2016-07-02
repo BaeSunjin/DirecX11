@@ -15,8 +15,11 @@
 
 #define VS_SUPPORT_VERSION 1700
 #if _MSC_VER < VS_SUPPORT_VERSION
-	PRAGMA_ERR( "NOT SUPPORT VERSION - Support Version :: Visual Studio 2013" )
+PRAGMA_ERR( "NOT SUPPORT VERSION - Support Version :: Visual Studio 2013" )
 #endif
+
+
+#define THROW_EXCEPTION(w) throw SE_Exception(w,__FILE__,__LINE__);
 
 class SE_Exception : public std::exception{
 
@@ -39,6 +42,7 @@ private:
 	
 };
 
+void trans_func( unsigned int u, _EXCEPTION_POINTERS* pExp );
 
 //#define DISALLOW_COPY_AND_ASSIGN(TypeName) \
 //  TypeName(const TypeName&)=delete;        \

@@ -30,6 +30,7 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
     <Text Include="MATH todo.txt" />
+    <Text Include="common_read.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -37,18 +38,6 @@
     </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Actor.h">
-      <Filter>Engine\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>Engine\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="B_VM.h">
-      <Filter>Engine\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="World.h">
-      <Filter>Engine\Core</Filter>
     </ClInclude>
     <ClInclude Include="Common\Camera.h">
       <Filter>Common</Filter>
@@ -83,23 +72,23 @@
     <ClInclude Include="Common\xnacollision.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="SE_Exception.h">
+    <ClInclude Include="Engine\Actor\Actor.h">
+      <Filter>Engine\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Actor\Object.h">
+      <Filter>Engine\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\B_VM.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\World.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Execption\SE_Exception.h">
       <Filter>Engine\Execption</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Actor.cpp">
-      <Filter>Engine\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
-      <Filter>Engine\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="B_VM.cpp">
-      <Filter>Engine\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="World.cpp">
-      <Filter>Engine\Core</Filter>
-    </ClCompile>
     <ClCompile Include="Common\Camera.cpp">
       <Filter>Common</Filter>
     </ClCompile>
@@ -130,13 +119,20 @@
     <ClCompile Include="Common\xnacollision.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="mproc.cpp">
+    <ClCompile Include="mproc.cpp" />
+    <ClCompile Include="Engine\Actor\Actor.cpp">
+      <Filter>Engine\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Actor\Object.cpp">
+      <Filter>Engine\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\B_VM.cpp">
       <Filter>Engine\Core</Filter>
     </ClCompile>
-    <ClCompile Include="common.txt">
-      <Filter>Common</Filter>
+    <ClCompile Include="Engine\Core\World.cpp">
+      <Filter>Engine\Core</Filter>
     </ClCompile>
-    <ClCompile Include="SE_Exception.cpp">
+    <ClCompile Include="Engine\Execption\SE_Exception.cpp">
       <Filter>Engine\Execption</Filter>
     </ClCompile>
   </ItemGroup>

@@ -2,7 +2,7 @@
 
 #include <list>
 #include <memory>
-#include "Actor.h"
+#include "../Actor/Actor.h"
 
 /*
 	new로 생성을 하면 안된다.

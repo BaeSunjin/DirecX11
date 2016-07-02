@@ -7,7 +7,7 @@
 //***************************************************************************************
 
 #include "../Common/d3dApp.h"
-#include "SE_Exception.h"
+#include "Engine/Execption/SE_Exception.h"
 #include <iostream>
 class InitDirect3DApp : public D3DApp
 {
@@ -25,7 +25,10 @@ public:
 int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE prevInstance,
 	PSTR cmdLine, int showCmd )
 {
+	//콘솔창 생성
 	AllocConsole( );
+	freopen( "CONOUT$", "w", stdout );
+
 	_set_se_translator( trans_func );
 
 	// Enable run-time memory check for debug builds.

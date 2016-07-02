@@ -6,7 +6,7 @@
 #include <WindowsX.h>
 #include <sstream>
 #include <iostream>
-#include "../SE_Exception.h"
+#include "../Engine/Execption/SE_Exception.h"
 
 
 namespace
@@ -95,7 +95,7 @@ int D3DApp::Run()
 
 	while(msg.message != WM_QUIT)
 	{
-		std::cout << "Caught a __try exception with SE_Exception.\n";
+		
 		// If there are Window messages then process them.
 		if(PeekMessage( &msg, 0, 0, 0, PM_REMOVE ))
 		{
